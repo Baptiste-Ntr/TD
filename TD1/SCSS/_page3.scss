@@ -1,0 +1,83 @@
+@import './fonts.scss';
+
+.container4 {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    // margin-top: 3vh;
+    table {
+        margin: auto;
+        width: 100%;
+        border-collapse: collapse;
+        tr {
+            td {
+                border: 1px #000 solid;
+                text-align: center;
+                font-size: 12px;
+                width: 40px;
+                padding: 5px;
+
+                input[type="text"] {
+                    width: 100px;
+                    height: 40px;
+                    cursor: pointer;
+                &:focus {
+                        border: 1px #000 solid;
+                        outline: none;
+                        background-color: rgba($color: #000000, $alpha: 0.05);
+                    }
+                }
+                &:nth-child(1){
+                    width: 200px;
+                }
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+        &:nth-child(1), &:nth-child(6) {
+            background: #333;
+            text-align: center;
+            color: #FFF;
+            font-weight: bold;
+            font-family: $Montserrat;
+        }
+        }
+    }
+}
+
+footer {
+    margin-top: 30px;
+    display: none;
+}
+
+.container5 {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    margin-top: 10vh;
+    table {
+        margin: auto;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    
+            td {
+                border: 1px #000 solid;
+                width: 150px;
+                height: 60px;
+                input {
+                    width: 80%;
+                    height: 40px;
+                    &:focus {
+                            border: 1px #000 solid;
+                            outline: none;
+                            background-color: rgba($color: #000000, $alpha: 0.05);
+                        }
+                }
+            }
+    }
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <title>Évalutation de la période à l'internationnal</title>
+  </head>
+  <body>
+    <div class="container1">
+      <header>
+        <h1>Evalutation de la période à l'international</h1>
+        <h3>(début janvier de l'année 3)</h3>
+      </header>
+      <section>
+        <p>
+          La validation de la période d'exposition internationale a lieu au
+          retour de l'élève ingénieur.
+        </p>
+        <br />
+        <p>
+          L'évalutation est réalisée par un jury constitué de membres de
+          l'équipe pédagogique et du tuteur industriel sur la base :
+        </p>
+        <br />
+        <ul>
+          <li>- d'une présentation orale de 25min en anglais</li>
+          <li>- d'un rapport d'activité</li>
+          <li>
+            - des fiches semestrielles d'évaluation de l'activité en entreprise
+            et des comptes rendus de visite.
+          </li>
+        </ul>
+        <br />
+        <p>
+          A l’issue de cette évaluation, la
+          <b>grille de suivi capacitaire en entreprise</b> est complétée et
+          certifiée par le jury de soutenance pour chaque semestre, signée par
+          les tuteurs industriel et pédagogique ainsi que l’élève-ingénieur puis
+          validée par le Directeur des Etudes. Cette validation donne lieu ou
+          non à la délivrance des ECTS de chaque semestre de l’année.
+        </p>
+        <br />
+        <label for="dateeval">Date de l'évalutation :</label>
+        <input type="date" name="" id="dateeval" />
+        <p>Composition du jury :</p>
+        <ul id="jury">
+          <li>- <input type="text" name="" id="" /></li>
+          <li>- <input type="text" name="" id="" /></li>
+          <li>- <input type="text" name="" id="" /></li>
+          <li>- <input type="text" name="" id="" /></li>
+        </ul>
+      </section>
+      <footer>
+        <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
+        <input type="text" name="" id="nomprenom" />
+      </footer>
+    </div>
+    <!-- premier tableau -->
+    <div class="container2">
+      <table id="table-header">
+        <tr>
+          <td colspan="3">
+            <h3>
+              Année 2 - Semestre 8 : fiche d'évaluation de la période à
+              l'international
+            </h3>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <p>A remplir par le Président du Jury de soutenance</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="mapp"> Nom/prénom du maitre d'apprentissage : </label>
+            <input type="text" name="" id="mapp" />
+          </td>
+          <td><label for="djury"> Date jury :</label></td>
+          <td><input type="text" id="djury" /></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label for="refpeda">Nom/prénom du référent pédagogique : </label>
+            <input type="text" name="" id="refpeda" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label for="entre">Entreprise à l'éntranger :</label>
+            <input type="text" name="" id="entre" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <label for="tmiss">Titre de la mission : </label>
+            <input type="text" name="" id="tmiss" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- deuxieme tableau -->
+    <div class="container3">
+      <p>
+        <b>A : </b>Très satisfaisant, <b>B : </b>Satisfaisant,
+        <b>C : </b> Insuffisant, <b>D : </b>Très insuffisant, <b>X : </b>Non
+        évaluable
+      </p>
+      <!-- premiere partie du tableau -->
+      <table id="main-table">
+        <tr>
+          <td colspan="2">ÉVALUATION DU MEMOIRE</td>
+          <td>X</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>OBSERVATIONS</td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="côté">Forme</td>
+          <td>Structuration du document</td>
+          <td><input type="radio" name="a" id="" /></td>
+          <td><input type="radio" name="a" id="" /></td>
+          <td><input type="radio" name="a" id="" /></td>
+          <td><input type="radio" name="a" id="" /></td>
+          <td><input type="radio" name="a" id="" /></td>
+          <td rowspan="10"><input type="text" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td>Présentation</td>
+          <td><input type="radio" name="b" id="" /></td>
+          <td><input type="radio" name="b" id="" /></td>
+          <td><input type="radio" name="b" id="" /></td>
+          <td><input type="radio" name="b" id="" /></td>
+          <td><input type="radio" name="b" id="" /></td>
+        </tr>
+        <tr>
+          <td>Rédaction : syntaxe, orthographe, vocabulaire</td>
+          <td><input type="radio" name="c" id="" /></td>
+          <td><input type="radio" name="c" id="" /></td>
+          <td><input type="radio" name="c" id="" /></td>
+          <td><input type="radio" name="c" id="" /></td>
+          <td><input type="radio" name="c" id="" /></td>
+        </tr>
+        <tr>
+          <td rowspan="7" class="côté">Fond</td>
+          <td>
+            <p>Prise en compte du contexte</p>
+          </td>
+          <td><input type="radio" name="d" id="" /></td>
+          <td><input type="radio" name="d" id="" /></td>
+          <td><input type="radio" name="d" id="" /></td>
+          <td><input type="radio" name="d" id="" /></td>
+          <td><input type="radio" name="d" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Maîtrise du sujet</p>
+          </td>
+          <td><input type="radio" name="e" id="" /></td>
+          <td><input type="radio" name="e" id="" /></td>
+          <td><input type="radio" name="e" id="" /></td>
+          <td><input type="radio" name="e" id="" /></td>
+          <td><input type="radio" name="e" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Rigueur de la démarche</p>
+          </td>
+          <td><input type="radio" name="f" id="" /></td>
+          <td><input type="radio" name="f" id="" /></td>
+          <td><input type="radio" name="f" id="" /></td>
+          <td><input type="radio" name="f" id="" /></td>
+          <td><input type="radio" name="f" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Choix des outils</p>
+          </td>
+          <td><input type="radio" name="g" id="" /></td>
+          <td><input type="radio" name="g" id="" /></td>
+          <td><input type="radio" name="g" id="" /></td>
+          <td><input type="radio" name="g" id="" /></td>
+          <td><input type="radio" name="g" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Mise en oeuvre</p>
+          </td>
+          <td><input type="radio" name="h" id="" /></td>
+          <td><input type="radio" name="h" id="" /></td>
+          <td><input type="radio" name="h" id="" /></td>
+          <td><input type="radio" name="h" id="" /></td>
+          <td><input type="radio" name="h" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Exploitation des résultats</p>
+          </td>
+          <td><input type="radio" name="i" id="" /></td>
+          <td><input type="radio" name="i" id="" /></td>
+          <td><input type="radio" name="i" id="" /></td>
+          <td><input type="radio" name="i" id="" /></td>
+          <td><input type="radio" name="i" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Conclusion</p>
+          </td>
+          <td><input type="radio" name="j" id="" /></td>
+          <td><input type="radio" name="j" id="" /></td>
+          <td><input type="radio" name="j" id="" /></td>
+          <td><input type="radio" name="j" id="" /></td>
+          <td><input type="radio" name="j" id="" /></td>
+        </tr>
+        <!-- deuxieme partie du tableau -->
+        <tr>
+          <td colspan="2">
+            <h4>ÉVALUATION DE LA SOUTENANCE</h4>
+          </td>
+          <td>
+            <p>X</p>
+          </td>
+          <td>
+            <p>A</p>
+          </td>
+          <td>
+            <p>B</p>
+          </td>
+          <td>
+            <p>C</p>
+          </td>
+          <td>
+            <p>D</p>
+          </td>
+          <td>OBSERVATIONS</td>
+        </tr>
+        <tr>
+          <td rowspan="4" class="côté">
+            <p>Attitude et prestation</p>
+          </td>
+          <td>
+            <p>
+              Expression orale en langue anglaise (clarté, précision, richesse
+              de vocabulaire, fluidité) et non-verbale (gestuelle)
+            </p>
+          </td>
+          <td><input type="radio" name="k" id="" /></td>
+          <td><input type="radio" name="k" id="" /></td>
+          <td><input type="radio" name="k" id="" /></td>
+          <td><input type="radio" name="k" id="" /></td>
+          <td><input type="radio" name="k" id="" /></td>
+          <td rowspan="15"><input type="text" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Argumentation</p>
+          </td>
+          <td><input type="radio" name="l" id="" /></td>
+          <td><input type="radio" name="l" id="" /></td>
+          <td><input type="radio" name="l" id="" /></td>
+          <td><input type="radio" name="l" id="" /></td>
+          <td><input type="radio" name="l" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Maîtrise des supports (forme et durée)</p>
+          </td>
+          <td><input type="radio" name="m" id="" /></td>
+          <td><input type="radio" name="m" id="" /></td>
+          <td><input type="radio" name="m" id="" /></td>
+          <td><input type="radio" name="m" id="" /></td>
+          <td><input type="radio" name="m" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Pertinence des réponses aux questions</p>
+          </td>
+          <td><input type="radio" name="n" id="" /></td>
+          <td><input type="radio" name="n" id="" /></td>
+          <td><input type="radio" name="n" id="" /></td>
+          <td><input type="radio" name="n" id="" /></td>
+          <td><input type="radio" name="n" id="" /></td>
+        </tr>
+        <tr>
+          <td rowspan="7" class="côté"><p>Présentation du travail</p></td>
+          <td>
+            <p>Contexte</p>
+          </td>
+          <td><input type="radio" name="o" id="" /></td>
+          <td><input type="radio" name="o" id="" /></td>
+          <td><input type="radio" name="o" id="" /></td>
+          <td><input type="radio" name="o" id="" /></td>
+          <td><input type="radio" name="o" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Sujet</p>
+          </td>
+          <td><input type="radio" name="p" id="" /></td>
+          <td><input type="radio" name="p" id="" /></td>
+          <td><input type="radio" name="p" id="" /></td>
+          <td><input type="radio" name="p" id="" /></td>
+          <td><input type="radio" name="p" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Méthodologie</p>
+          </td>
+          <td><input type="radio" name="q" id="" /></td>
+          <td><input type="radio" name="q" id="" /></td>
+          <td><input type="radio" name="q" id="" /></td>
+          <td><input type="radio" name="q" id="" /></td>
+          <td><input type="radio" name="q" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Aspect scientifique et technique</p>
+          </td>
+          <td><input type="radio" name="r" id="" /></td>
+          <td><input type="radio" name="r" id="" /></td>
+          <td><input type="radio" name="r" id="" /></td>
+          <td><input type="radio" name="r" id="" /></td>
+          <td><input type="radio" name="r" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Aspect économique</p>
+          </td>
+          <td><input type="radio" name="s" id="" /></td>
+          <td><input type="radio" name="s" id="" /></td>
+          <td><input type="radio" name="s" id="" /></td>
+          <td><input type="radio" name="s" id="" /></td>
+          <td><input type="radio" name="s" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Aspect organisationnel</p>
+          </td>
+          <td><input type="radio" name="t" id="" /></td>
+          <td><input type="radio" name="t" id="" /></td>
+          <td><input type="radio" name="t" id="" /></td>
+          <td><input type="radio" name="t" id="" /></td>
+          <td><input type="radio" name="t" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Conclusion professionnelle</p>
+          </td>
+          <td><input type="radio" name="u" id="" /></td>
+          <td><input type="radio" name="u" id="" /></td>
+          <td><input type="radio" name="u" id="" /></td>
+          <td><input type="radio" name="u" id="" /></td>
+          <td><input type="radio" name="u" id="" /></td>
+        </tr>
+        <tr>
+          <td rowspan="4" class="côté">
+            <p>Dimension culturelle</p>
+          </td>
+          <td>
+            <p>
+              Aspects humains, sociologie de l’entreprise, rapport au travail,
+              relations hiérarchiques et codes, acquisition des compétences
+              interculturelles
+            </p>
+          </td>
+          <td><input type="radio" name="v" id="" /></td>
+          <td><input type="radio" name="v" id="" /></td>
+          <td><input type="radio" name="v" id="" /></td>
+          <td><input type="radio" name="v" id="" /></td>
+          <td><input type="radio" name="v" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Niveau d’immersion : autonomie, acculturation, vie sociale,
+              exploration des patrimoines ...
+            </p>
+          </td>
+          <td><input type="radio" name="w" id="" /></td>
+          <td><input type="radio" name="w" id="" /></td>
+          <td><input type="radio" name="w" id="" /></td>
+          <td><input type="radio" name="w" id="" /></td>
+          <td><input type="radio" name="w" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Connaissance du pays d’accueil : histoire, géographie, politique,
+              économie, gastronomie, système éducatif, langue ...
+            </p>
+          </td>
+          <td><input type="radio" name="x" id="" /></td>
+          <td><input type="radio" name="x" id="" /></td>
+          <td><input type="radio" name="x" id="" /></td>
+          <td><input type="radio" name="x" id="" /></td>
+          <td><input type="radio" name="x" id="" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Conclusion extra-professionnelle</p>
+          </td>
+          <td><input type="radio" name="y" id="" /></td>
+          <td><input type="radio" name="y" id="" /></td>
+          <td><input type="radio" name="y" id="" /></td>
+          <td><input type="radio" name="y" id="" /></td>
+          <td><input type="radio" name="y" id="" /></td>
+        </tr>
+        <!-- troisieme partie du tableau -->
+        <tr>
+          <td colspan="8"><h4>SYNTHESE DE L'EVALUATION</h4></td>
+        </tr>
+        <tr>
+          <td colspan="8"><input type="text" name="" id="" /></td>
+        </tr>
+      </table>
+      <footer>
+        <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
+        <input type="text" name="" id="nomprenom" />
+      </footer>
+    </div>
+    <!-- troisième tableau -->
+    <div class="container4">
+      <table>
+        <tr>
+          <td colspan="16">
+            <h3>PROGRESSION SEMESTRE D'ETUDES A L'ETRANGER</h3>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="4">
+            <p><b> Acquisitions des compétences </b></p>
+            E : expertise <br />
+            M : MAitrise <br />
+            A : Application <br />
+            N : Notions <br />
+            X : Non évalué
+          </td>
+          <td>CG1.1</td>
+          <td>CG1.2</td>
+          <td>CG1.3</td>
+          <td>CG1.4</td>
+          <td>CG1.5</td>
+          <td>CG2.1</td>
+          <td>CG2.2</td>
+          <td>CG2.3</td>
+          <td>XXX</td>
+          <td>CG2.4</td>
+          <td>CG2.5</td>
+          <td>CG3.1</td>
+          <td>CG3.2</td>
+          <td>CG3.3</td>
+          <td>CG3.4</td>
+        </tr>
+        <tr>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td>GS1</td>
+          <td>GS2</td>
+          <td>GS3</td>
+          <td>GS4</td>
+          <td>GS5</td>
+          <td>GS6</td>
+          <td>GS7</td>
+          <td colspan="8" rowspan="2"></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td colspan="16">
+            <h3>NOTATION ET DELIVRANCE DES CREDITS</h3>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="3"><b>Evaluation</b></td>
+          <td colspan="2">CR (50%)</td>
+          <td colspan="2">ORAL (50%)</td>
+          <td colspan="2">Note entreprise (100%)</td>
+          <td rowspan="2" colspan="3">
+            <b>Délivrance des crédits </b><br />(3 ECTS)
+          </td>
+          <td rowspan="2" colspan="2">
+            <input type="radio" name="non" id="OUI" /><label for="OUI"
+              >OUI</label
+            >
+          </td>
+          <td rowspan="2" colspan="2">
+            <input type="radio" name="non" id="NON" /><label for="NON"
+              >NON</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" name="" id="" /></td>
+          <td colspan="2"><input type="text" name="" id="" /></td>
+          <td colspan="2"><input type="text" name="" id="" /></td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="3"><b>Evaluation</b></td>
+          <td colspan="2">CR (50%)</td>
+          <td colspan="2">ORAL (50%)</td>
+          <td colspan="2">Note volet personnel (100%)</td>
+          <td rowspan="2" colspan="3">
+            <b>Délivrance des crédits </b><br />(2 ECTS)
+          </td>
+          <td rowspan="2" colspan="2">
+            <input type="radio" name="oui" id="OOUI" /><label for="OOUI"
+              >OUI</label
+            >
+          </td>
+          <td rowspan="2" colspan="2">
+            <input type="radio" name="oui" id="NNON" /><label for="NNON"
+              >NON</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" name="" id="" /></td>
+          <td colspan="2"><input type="text" name="" id="" /></td>
+          <td colspan="2"><input type="text" name="" id="" /></td>
+        </tr>
+      </table>
+    </div>
+    <!-- quatrième tableau -->
+    <div class="container5">
+      <table>
+        <tr>
+          <td><label for="npres">Nom/prénom du Président du jury :</label></td>
+          <td><input type="text" name="" id="npres" /></td>
+          <td>Signature :</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="npres">Nom/prénom du maitre d’apprentissage :</label>
+          </td>
+          <td><input type="text" name="" id="npres" /></td>
+          <td>Signature :</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="npres">Nom/prénom du référent pédagogique :</label>
+          </td>
+          <td><input type="text" name="" id="npres" /></td>
+          <td>Signature :</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="npres">Nom/prénom de l’enseignant d’anglais :</label>
+          </td>
+          <td><input type="text" name="" id="npres" /></td>
+          <td>Signature :</td>
+          <td></td>
+        </tr>
+      </table>
+      <footer>
+        <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
+        <input type="text" name="" id="nomprenom" />
+      </footer>
+    </div>
+  </body>
+</html>

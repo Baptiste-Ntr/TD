@@ -1,0 +1,92 @@
+@import './fonts.scss';
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $Poppins;
+    height: 300vh;
+    width: 100%;
+
+    .container1 {    
+        width: 90%;
+        height: 900px;
+        margin: auto;
+        margin-top: 30px;
+        border: 1px #333 solid;
+        position: relative;
+        border-radius: 5px;
+
+        header {
+            background-color: #333;
+            color: #fff;
+            height: 100px;
+            padding: 20px;
+            h1 {
+                font-family: $Montserrat;
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+
+        section {
+            height: 40%;
+            width: 100%;
+            padding: 30px;
+
+            li {
+                list-style-type: none;
+                margin-left: 50px;
+            }
+
+            label, input[type="date"] {
+                margin-top: 40px;
+                margin-bottom: 30px;
+                cursor: pointer;
+            }
+
+            input[type="date"] {
+                margin-left: 20px;
+                border-radius: 5px;
+                border: 1px #000 solid;
+                height: 30px;
+                width: 130px;
+                text-align: center;
+                font-family: $Montserrat;
+            }
+
+            #jury {
+                margin-top: 20px;
+                margin-left: 130px;
+                li {
+                    height: 50px;
+                    input {
+                        height: 30px;
+                        border-radius: 5px;
+                        border: 1px #000 solid;
+                        cursor: pointer;
+                        &:focus {
+                            outline: none;
+                            background-color: rgba($color: #000000, $alpha: 0.05);
+                        }
+                    }
+
+                }
+            }
+            
+        }
+
+        footer {
+            position: absolute;
+            bottom: -50px;
+        }
+    }
+}
+
+
+

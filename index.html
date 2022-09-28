@@ -80,7 +80,7 @@
             <input type="text" name="" id="mapp" />
           </td>
           <td><label for="djury"> Date jury :</label></td>
-          <td><input type="text" id="djury" /></td>
+          <td><input type="date" id="djury" /></td>
         </tr>
         <tr>
           <td colspan="3">
@@ -128,7 +128,9 @@
           <td><input type="radio" name="a" id="" /></td>
           <td><input type="radio" name="a" id="" /></td>
           <td><input type="radio" name="a" id="" /></td>
-          <td rowspan="10"><input type="text" name="" id="" /></td>
+          <td rowspan="10">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </td>
         </tr>
         <tr>
           <td>Présentation</td>
@@ -254,7 +256,9 @@
           <td><input type="radio" name="k" id="" /></td>
           <td><input type="radio" name="k" id="" /></td>
           <td><input type="radio" name="k" id="" /></td>
-          <td rowspan="15"><input type="text" name="" id="" /></td>
+          <td rowspan="15">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </td>
         </tr>
         <tr>
           <td>
@@ -415,7 +419,9 @@
           <td colspan="8"><h4>SYNTHESE DE L'EVALUATION</h4></td>
         </tr>
         <tr>
-          <td colspan="8"><input type="text" name="" id="" /></td>
+          <td colspan="8">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </td>
         </tr>
       </table>
       <footer>
@@ -585,6 +591,9 @@
         <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
         <input type="text" name="" id="nomprenom" />
       </footer>
+      <div class="button">
+        <input type="button" value="Imprimer" onclick="window.print()" />
+      </div>
     </div>
   </body>
 </html>

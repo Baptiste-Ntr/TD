@@ -1,4 +1,4 @@
-@import './fonts.scss';
+@import 'var';
 
 *, ::after, ::before {
     margin: 0;
@@ -10,8 +10,10 @@ body {
     font-family: $Poppins;
     height: 300vh;
     width: 100%;
+    background: #F1FAEE;
 
-    .container1 {    
+    .container1 {
+        animation: slideleft 0.7s 0.3s ease-in-out;
         width: 90%;
         height: 900px;
         margin: auto;
@@ -70,6 +72,10 @@ body {
                         border-radius: 5px;
                         border: 1px #000 solid;
                         cursor: pointer;
+                        font-family: $Montserrat;
+                        text-transform: capitalize;
+                        padding: 5px;
+                        transition: all 0.3s;
                         &:focus {
                             outline: none;
                             background-color: rgba($color: #000000, $alpha: 0.05);
@@ -87,6 +93,5 @@ body {
         }
     }
 }
-
 
 

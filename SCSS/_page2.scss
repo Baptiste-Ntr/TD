@@ -8,21 +8,36 @@
     margin-top: 10vh;
 
     #table-header {
-        border: 1px #000 solid;
+        border: 1px #333 solid;
         border-collapse: collapse;
         margin: auto;
         width: 100%;
         tr {
             td {
-                border: 1px #000 solid;
+                border: 1px #333 solid;
                 height: 40px;
                 padding: 5px;
+                input[type="date"] {
+                    border: 1px #333 solid;
+                    border-radius: 5px;
+                    height: 20px;
+                    text-align: center;
+                }
                 input[type="text"] {
                     margin-left: 10px;
+                    height: 20px;
+                    width: 300px;
+                    border-radius: 5px;
+                    border: 1px #333 solid;
+                    cursor: pointer;
+                    font-family: $Montserrat;
+                    text-transform: capitalize;
+                    padding: 5px;
+                    transition: all 0.3s;
                     &:focus {
-                        border: 1px #000 solid;
+                        border: 1px #333 solid;
                         outline: none;
-                        background-color: rgba($color: #000000, $alpha: 0.05);
+                        background-color: rgba($color: #333, $alpha: 0.05);
                     }
                 }
                 h3 {
@@ -46,7 +61,7 @@
     margin: auto;
     margin-top: 5vh;
     position: relative;
-    height: 1900px;
+    height: 1700px;
     p {
         margin-bottom: 10px;
     }
@@ -55,20 +70,34 @@
         border-collapse: collapse;
         tr {
             td {
-                border: 1px #000 solid;
+                border: 1px #333 solid;
                 padding: 5px;
-                input[type="text"]{
-                    height: 300px;
+                input[type="radio"] {
+                    cursor: pointer;
+                }
+                textarea{
+                    height: 800px;
                     width: 100%;
                     vertical-align: top;
                     transition: all 0.3s;
                     cursor: pointer;
                     border-radius: 5px;
                     border: 1px #000 solid;
+                    padding-top: 0px;
+                    font-family: $Montserrat;
+                    padding: 5px;
+                    resize: none;
+                    transition: all 0.3s;
                     &:focus {
                         border: 1px #000 solid;
                         outline: none;
                         background-color: rgba($color: #000000, $alpha: 0.05);
+                    }
+                    &:first-of-type {
+                        height: 500px;
+                    }
+                    &:last-of-type {
+                        height: 300px;
                     }
                 }
             }
@@ -81,7 +110,7 @@
             }
         }
         .côté {
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
             text-align: center;
             font-weight: bold;
         }

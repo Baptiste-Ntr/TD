@@ -6,6 +6,12 @@ function alertpost() {
   alertcontainer.style.animation = "alertanim 0.3s ease";
   alertcontainer.style.display = "flex";
 
+  alertsend.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  });
+
   setTimeout(function () {
     alertcontainer.style.animation = "alertanimreverse 0.3s ease";
     setTimeout(function () {
@@ -14,5 +20,5 @@ function alertpost() {
     setTimeout(function () {
       submithide.click();
     }, 700);
-  }, 3000);
+  }, 2000);
 }

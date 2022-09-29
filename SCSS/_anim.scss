@@ -1,12 +1,12 @@
 @keyframes slideleft {
     from {
-        scale: 0;
+        // scale: 0;
         filter: blur(5px);
         opacity: 0;
     }
 
     to {
-        scale: 1;
+        // scale: 1;
         filter: blur(0px);
         opacity: 1;
     }
@@ -32,12 +32,12 @@
     }
 }
 
-@keyframes color {
+@keyframes send {
     from {
-        filter: hue-rotate(0deg);
+        width: 0px;
     }
 
     to {
-        filter: hue-rotate(360deg);
+        width: 200px;
     }
 }

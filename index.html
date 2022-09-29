@@ -1,3 +1,5 @@
+<!-- Copyright by Baptiste Nautré -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +13,8 @@
     <title>Évalutation de la période à l'internationnal</title>
   </head>
   <body>
+    <!-- Le form est en get par rapport a des soucis aux tests avec le rafraichissement de la page qui envoyais vers une erreur 405 a cause des autorisations pour le POST -->
+    <!-- <form action="" method="post"> <- voici quand même le POST -->
     <form action="" method="get">
       <div class="container1">
         <header>
@@ -596,17 +600,17 @@
           <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
           <input type="text" name="" id="nomprenom" />
         </footer>
-        <div class="button">
-          <input type="button" value="Imprimer" onclick="window.print()" />
-          <input type="button" value="Envoyer" onclick="alertpost()" />
-          <!-- boutton submit caché -->
-          <input type="submit" value="" id="submithide" />
-        </div>
+      </div>
+      <div class="button">
+        <input type="button" value="Imprimer" onclick="window.print()" />
+        <input type="button" value="Envoyer" onclick="alertpost()" />
+        <!-- boutton submit caché afin de pouvoir avoir une animation avant le refresh de la page-->
+        <input type="submit" value="" id="submithide" />
       </div>
     </form>
     <div class="alert-container" id="alertcontainer">
       <div class="alert" id="alertsend">
-        <p>Votre formulaire a bien été envoyer !</p>
+        <p>Votre formulaire à bien été envoyé !</p>
       </div>
     </div>
   </body>

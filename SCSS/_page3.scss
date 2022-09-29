@@ -117,9 +117,25 @@ footer {
                 transform: translateY(2px);
                 scale: 0.95;
             }
-            &[type="submit"]:hover {
-                background: green;
+            &[type="submit"] {
+                position: absolute;
+                left: -9999px;
             }
+            &:nth-child(2) {
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 50px;
+                    width: 100px;
+                    background: #000;
+                }
+
+                &:hover {
+                    background: rgb(6, 173, 6);
+                }
+            }
+
+
         }
     }
 }

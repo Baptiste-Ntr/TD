@@ -100,7 +100,7 @@ footer {
         height: 100px;
         margin: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         input {
             height: 50px;
@@ -112,9 +112,13 @@ footer {
             border-radius: 5px;
             font-family: $Poppins;
             font-size: 20px;
+            transition: all 0.3s;
             &:active {
                 transform: translateY(2px);
                 scale: 0.95;
+            }
+            &[type="submit"]:hover {
+                background: green;
             }
         }
     }

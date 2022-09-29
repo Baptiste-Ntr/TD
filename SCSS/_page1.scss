@@ -8,12 +8,13 @@
 
 body {
     font-family: $Poppins;
-    height: 300vh;
+    height: 450vh;
     width: 100%;
     background: #F1FAEE;
+    animation: slideleft 0.7s 0.3s ease-in-out;
 
     .container1 {
-        animation: slideleft 0.7s 0.3s ease-in-out;
+        
         width: 90%;
         height: 900px;
         margin: auto;

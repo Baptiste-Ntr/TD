@@ -1,0 +1,34 @@
+@import 'var';
+
+body {
+    .alert-container {
+        width: 100%;
+        height: 450vh;
+        // background: #000;
+        position: absolute;
+        top: 0;
+        backdrop-filter: blur(15px) grayscale(0.3) opacity(1);
+        // opacity: 0.4;
+        display: none;
+        justify-content: center;
+        .alert {
+            position: fixed;
+            width: 700px;
+            height: 300px;
+            background: #333;
+            bottom: 300px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 3px 3px 10px #000;
+            p {
+                color: #fff;
+                font-family: $Montserrat;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+    

@@ -1,14 +1,16 @@
 var alertcontainer = document.getElementById("alertcontainer");
 var alertsend = document.getElementById("alertsend");
 var submithide = document.getElementById("submithide");
-
+// getElementsByClassName retourne un tableau avec tous les inputs dedans
 var require = document.getElementsByClassName("require");
+
+var test = document.getElementById("test").innerText.length;
 
 // if (document.getElementsById("require").)
 
 function alertpost() {
   for (var i = 0; i < require.length; i++) {
-    if (require[i].innerHTML == "") {
+    if (require[i].innerHTML.length == 0) {
       alertsend.innerHTML =
         "<p> Des champs obligatoire ne sont pas remplis </p>";
       // alertsend.classList.add = "";
@@ -27,7 +29,7 @@ function alertpost() {
           alertcontainer.style.display = "none";
         }, 280);
       }, 1500);
-    } else if (require[i].innerHTML != "") {
+    } else if (require[i].innerHTML != 0) {
       alertcontainer.style.animation = "alertanim 0.3s ease";
       alertcontainer.style.display = "flex";
 

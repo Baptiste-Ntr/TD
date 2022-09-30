@@ -15,6 +15,10 @@
   <body>
     <!-- Le form est en get par rapport a des soucis aux tests avec le rafraichissement de la page qui envoyais vers une erreur 405 a cause des autorisations pour le POST -->
     <!-- <form action="" method="post"> <- voici quand même le POST -->
+    <div id="test"></div>
+    <div id="test"></div>
+    <div id="test"></div>
+    <div id="test"></div>
     <form action="" method="get" name="mainform">
       <div class="container1">
         <header>
@@ -54,16 +58,14 @@
           <input type="date" name="" id="dateeval" required />
           <p>Composition du jury :</p>
           <ul id="jury">
-            <li>- <input type="text" name="" class="require" required /></li>
+            <li>
+              - <input type="text" name="" class="require" id="test" required />
+            </li>
             <li>- <input type="text" name="" class="require" required /></li>
             <li>- <input type="text" name="" class="require" required /></li>
             <li>- <input type="text" name="" class="require" required /></li>
           </ul>
         </section>
-        <footer>
-          <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
-          <input type="text" name="" id="nomprenom" class="require" required />
-        </footer>
       </div>
       <!-- premier tableau -->
       <div class="container2">

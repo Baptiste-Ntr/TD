@@ -15,7 +15,7 @@
   <body>
     <!-- Le form est en get par rapport a des soucis aux tests avec le rafraichissement de la page qui envoyais vers une erreur 405 a cause des autorisations pour le POST -->
     <!-- <form action="" method="post"> <- voici quand même le POST -->
-    <form action="" method="get">
+    <form action="" method="get" name="mainform">
       <div class="container1">
         <header>
           <h1>Evalutation de la période à l'international</h1>
@@ -51,18 +51,18 @@
           </p>
           <br />
           <label for="dateeval">Date de l'évalutation :</label>
-          <input type="date" name="" id="dateeval" />
+          <input type="date" name="" id="dateeval" required />
           <p>Composition du jury :</p>
           <ul id="jury">
-            <li>- <input type="text" name="" id="" /></li>
-            <li>- <input type="text" name="" id="" /></li>
-            <li>- <input type="text" name="" id="" /></li>
-            <li>- <input type="text" name="" id="" /></li>
+            <li>- <input type="text" name="" class="require" required /></li>
+            <li>- <input type="text" name="" class="require" required /></li>
+            <li>- <input type="text" name="" class="require" required /></li>
+            <li>- <input type="text" name="" class="require" required /></li>
           </ul>
         </section>
         <footer>
           <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
-          <input type="text" name="" id="nomprenom" />
+          <input type="text" name="" id="nomprenom" class="require" required />
         </footer>
       </div>
       <!-- premier tableau -->
@@ -84,15 +84,15 @@
           <tr>
             <td>
               <label for="mapp"> Nom/prénom du maitre d'apprentissage : </label>
-              <input type="text" name="" id="mapp" />
+              <input type="text" name="" id="mapp" required />
             </td>
             <td><label for="djury"> Date jury :</label></td>
-            <td><input type="date" id="djury" /></td>
+            <td><input type="date" id="djury" required /></td>
           </tr>
           <tr>
             <td colspan="3">
               <label for="refpeda">Nom/prénom du référent pédagogique : </label>
-              <input type="text" name="" id="refpeda" />
+              <input type="text" name="" id="refpeda" required />
             </td>
           </tr>
           <tr>
@@ -431,10 +431,6 @@
             </td>
           </tr>
         </table>
-        <footer>
-          <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
-          <input type="text" name="" id="nomprenom" />
-        </footer>
       </div>
       <!-- troisième tableau -->
       <div class="container4">
@@ -470,21 +466,21 @@
             <td>CG3.4</td>
           </tr>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
             <td></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
           </tr>
           <tr>
             <td>GS1</td>
@@ -497,13 +493,13 @@
             <td colspan="8" rowspan="2"></td>
           </tr>
           <tr>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
-            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
           </tr>
           <tr>
             <td colspan="16">
@@ -530,9 +526,9 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2"><input type="text" name="" id="" /></td>
-            <td colspan="2"><input type="text" name="" id="" /></td>
-            <td colspan="2"><input type="text" name="" id="" /></td>
+            <td colspan="2"><input type="number" name="" id="" /></td>
+            <td colspan="2"><input type="number" name="" id="" /></td>
+            <td colspan="2"><input type="number" name="" id="" /></td>
           </tr>
           <tr>
             <td rowspan="2" colspan="3"><b>Evaluation</b></td>
@@ -554,9 +550,9 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2"><input type="text" name="" id="" /></td>
-            <td colspan="2"><input type="text" name="" id="" /></td>
-            <td colspan="2"><input type="text" name="" id="" /></td>
+            <td colspan="2"><input type="number" name="" id="" /></td>
+            <td colspan="2"><input type="number" name="" id="" /></td>
+            <td colspan="2"><input type="number" name="" id="" /></td>
           </tr>
         </table>
       </div>
@@ -567,7 +563,7 @@
             <td>
               <label for="npres">Nom/prénom du Président du jury :</label>
             </td>
-            <td><input type="text" name="" id="npres" /></td>
+            <td><input type="text" name="" id="npres" required /></td>
             <td>Signature :</td>
             <td></td>
           </tr>
@@ -575,7 +571,7 @@
             <td>
               <label for="npres">Nom/prénom du maitre d’apprentissage :</label>
             </td>
-            <td><input type="text" name="" id="npres" /></td>
+            <td><input type="text" name="" id="npres" required /></td>
             <td>Signature :</td>
             <td></td>
           </tr>
@@ -583,7 +579,7 @@
             <td>
               <label for="npres">Nom/prénom du référent pédagogique :</label>
             </td>
-            <td><input type="text" name="" id="npres" /></td>
+            <td><input type="text" name="" id="npres" required /></td>
             <td>Signature :</td>
             <td></td>
           </tr>
@@ -591,17 +587,14 @@
             <td>
               <label for="npres">Nom/prénom de l’enseignant d’anglais :</label>
             </td>
-            <td><input type="text" name="" id="npres" /></td>
+            <td><input type="text" name="" id="npres" required /></td>
             <td>Signature :</td>
             <td></td>
           </tr>
         </table>
-        <footer>
-          <label for="nomprenom">Nom/Prénom élève-ingénieur :</label>
-          <input type="text" name="" id="nomprenom" />
-        </footer>
       </div>
       <div class="button">
+        <!-- btn imprimer peu fonctionnel sur Firfox, beaucoup plus fonctionnel avec les navigateurs sous Chrome -->
         <input type="button" value="Imprimer" onclick="window.print()" />
         <input type="button" value="Envoyer" onclick="alertpost()" />
         <!-- boutton submit caché afin de pouvoir avoir une animation avant le refresh de la page-->
@@ -610,7 +603,8 @@
     </form>
     <div class="alert-container" id="alertcontainer">
       <div class="alert" id="alertsend">
-        <p>Votre formulaire à bien été envoyé !</p>
+        <p>Envoi du formulaire</p>
+        <div class="point"></div>
       </div>
     </div>
   </body>

@@ -324,7 +324,7 @@ body .container1 footer {
   width: 20px;
   padding: 5px;
 }
-.container4 table tr td input[type=text] {
+.container4 table tr td input[type=number] {
   width: 50px;
   height: 40px;
   cursor: pointer;
@@ -334,7 +334,7 @@ body .container1 footer {
   border-radius: 3px;
   transition: all 0.3s;
 }
-.container4 table tr td input[type=text]:focus {
+.container4 table tr td input[type=number]:focus {
   border: 1px #000 solid;
   outline: none;
   background-color: rgba(0, 0, 0, 0.05);

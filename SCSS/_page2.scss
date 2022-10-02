@@ -25,7 +25,7 @@
                 }
                 input[type="text"] {
                     margin-left: 10px;
-                    height: 20px;
+                    height: 25px;
                     width: 300px;
                     border-radius: 5px;
                     border: 1px #333 solid;
@@ -33,6 +33,7 @@
                     font-family: $Montserrat;
                     text-transform: capitalize;
                     padding: 5px;
+                    font-size: 15px;
                     transition: all 0.3s;
                     &:focus {
                         border: 1px #333 solid;

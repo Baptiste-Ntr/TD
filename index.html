@@ -54,9 +54,9 @@
             lieu ou non à la délivrance des ECTS de chaque semestre de l’année.
           </p>
           <br />
-          <label for="dateeval">Date de l'évalutation :</label>
-          <input type="date" name="" id="dateeval" required />
-          <p>Composition du jury :</p>
+          <label for="dateeval" class="obli">Date de l'évalutation :</label>
+          <input type="date" name="" id="dateeval" class="require" required />
+          <p class="obli">Composition du jury :</p>
           <ul id="jury">
             <li>
               - <input type="text" name="" class="require" id="test" required />
@@ -127,7 +127,7 @@
       </div>
       <!-- deuxieme tableau -->
       <div class="container3">
-        <p>
+        <p class="obli">
           <b>A : </b>Très satisfaisant, <b>B : </b>Satisfaisant,
           <b>C : </b> Insuffisant, <b>D : </b>Très insuffisant, <b>X : </b>Non
           évaluable
@@ -458,12 +458,16 @@
           </tr>
           <tr>
             <td rowspan="4">
-              <p><b> Acquisitions des compétences </b></p>
-              E : expertise <br />
-              M : MAitrise <br />
-              A : Application <br />
-              N : Notions <br />
-              X : Non évalué
+              <p class="obli">
+                <b> Acquisitions des compétences </b>
+              </p>
+              <p>
+                E : expertise <br />
+                M : Maitrise <br />
+                A : Application <br />
+                N : Notions <br />
+                X : Non évalué
+              </p>
             </td>
             <td>CG1.1</td>
             <td>CG1.2</td>
@@ -482,21 +486,21 @@
             <td>CG3.4</td>
           </tr>
           <tr>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
             <td></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
           </tr>
           <tr>
             <td>GS1</td>
@@ -509,13 +513,13 @@
             <td colspan="8" rowspan="2"></td>
           </tr>
           <tr>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="text" name="" id="" /></td>
           </tr>
           <tr>
             <td colspan="16">
@@ -555,14 +559,12 @@
               <b>Délivrance des crédits </b><br />(2 ECTS)
             </td>
             <td rowspan="2" colspan="2">
-              <input type="radio" name="oui" id="OOUI" /><label for="OOUI"
-                >OUI</label
-              >
+              <input type="radio" name="oui" id="OOUI" />
+              <label for="OOUI">OUI</label>
             </td>
             <td rowspan="2" colspan="2">
-              <input type="radio" name="oui" id="NNON" /><label for="NNON"
-                >NON</label
-              >
+              <input type="radio" name="oui" id="NNON" />
+              <label for="NNON">NON </label>
             </td>
           </tr>
           <tr>
@@ -577,33 +579,55 @@
         <table>
           <tr>
             <td>
-              <label for="npres">Nom/prénom du Président du jury :</label>
+              <label for="npres" class="obli"
+                >Nom/prénom du Président du jury :
+              </label>
             </td>
-            <td><input type="text" name="" id="npres" required /></td>
+            <td>
+              <input type="text" name="" id="npres" class="obli" required />
+            </td>
             <td>Signature :</td>
             <td></td>
           </tr>
           <tr>
             <td>
-              <label for="npres">Nom/prénom du maitre d’apprentissage :</label>
+              <label for="npres" class="obli"
+                >Nom/prénom du maitre d’apprentissage :
+              </label>
             </td>
-            <td><input type="text" name="" id="npres" required /></td>
+            <td>
+              <input
+                type="text"
+                name=""
+                id="npres"
+                class="require obli"
+                required
+              />
+            </td>
             <td>Signature :</td>
             <td></td>
           </tr>
           <tr>
             <td>
-              <label for="npres">Nom/prénom du référent pédagogique :</label>
+              <label for="npres" class="obli"
+                >Nom/prénom du référent pédagogique :
+              </label>
             </td>
-            <td><input type="text" name="" id="npres" required /></td>
+            <td>
+              <input type="text" name="" id="npres" class="require" required />
+            </td>
             <td>Signature :</td>
             <td></td>
           </tr>
           <tr>
             <td>
-              <label for="npres">Nom/prénom de l’enseignant d’anglais :</label>
+              <label for="npres" class="obli"
+                >Nom/prénom de l’enseignant d’anglais :
+              </label>
             </td>
-            <td><input type="text" name="" id="npres" required /></td>
+            <td>
+              <input type="text" name="" id="npres" class="require" required />
+            </td>
             <td>Signature :</td>
             <td></td>
           </tr>

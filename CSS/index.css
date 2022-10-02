@@ -154,9 +154,10 @@ body .container1 section #jury li input:focus {
   outline: none;
   background-color: rgba(0, 0, 0, 0.05);
 }
-body .container1 footer {
-  position: absolute;
-  bottom: -50px;
+body .obli::after {
+  content: " *";
+  color: red;
+  display: inline;
 }
 
 .container2 {
@@ -185,7 +186,7 @@ body .container1 footer {
 }
 .container2 #table-header tr td input[type=text] {
   margin-left: 10px;
-  height: 20px;
+  height: 25px;
   width: 300px;
   border-radius: 5px;
   border: 1px #333 solid;
@@ -193,6 +194,7 @@ body .container1 footer {
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
   padding: 5px;
+  font-size: 15px;
   transition: all 0.3s;
 }
 .container2 #table-header tr td input[type=text]:focus {
@@ -324,7 +326,7 @@ body .container1 footer {
   width: 20px;
   padding: 5px;
 }
-.container4 table tr td input[type=number] {
+.container4 table tr td input[type=text], .container4 table tr td input[type=number] {
   width: 50px;
   height: 40px;
   cursor: pointer;
@@ -334,13 +336,10 @@ body .container1 footer {
   border-radius: 3px;
   transition: all 0.3s;
 }
-.container4 table tr td input[type=number]:focus {
+.container4 table tr td input[type=text]:focus, .container4 table tr td input[type=number]:focus {
   border: 1px #000 solid;
   outline: none;
   background-color: rgba(0, 0, 0, 0.05);
-}
-.container4 table tr td:nth-child(1) {
-  width: 200px;
 }
 .container4 table tr td label {
   margin-left: 10px;
@@ -432,10 +431,6 @@ footer {
   background-color: rgb(27, 27, 27);
 }
 
-.stop-scrolling {
-  overflow: hidden;
-}
-
 @keyframes slideleft {
   from {
     filter: blur(5px);
@@ -498,4 +493,8 @@ body .alert-container .alert p {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: bold;
+}
+
+.invalid {
+  border: 1px red solid;
 }/*# sourceMappingURL=index.css.map */

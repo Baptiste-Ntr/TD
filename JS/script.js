@@ -14,7 +14,7 @@ function alertpost() {
       console.log(require[i].value);
       require[i].classList.add = "invalid";
       alertsend.innerHTML =
-        "<p> Des champs obligatoire ne sont pas remplis </p>";
+        "<p style='font-size='25px;''> Des champs obligatoire ne sont pas remplis </p>";
       alertcontainer.style.animation = "alertanim 0.3s ease";
       alertcontainer.style.display = "flex";
 

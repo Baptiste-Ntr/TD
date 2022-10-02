@@ -87,11 +87,12 @@ body {
             }
             
         }
+    }
 
-        footer {
-            position: absolute;
-            bottom: -50px;
-        }
+    .obli::after {
+        content: ' *';
+        color: red;
+        display: inline;
     }
 }
 

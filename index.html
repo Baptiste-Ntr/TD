@@ -61,9 +61,15 @@
             <li>
               - <input type="text" name="" class="require" id="test" required />
             </li>
-            <li>- <input type="text" name="" class="require" required /></li>
-            <li>- <input type="text" name="" class="require" required /></li>
-            <li>- <input type="text" name="" class="require" required /></li>
+            <li>
+              - <input type="text" name="" class="require obli" required />
+            </li>
+            <li>
+              - <input type="text" name="" class="require obli" required />
+            </li>
+            <li>
+              - <input type="text" name="" class="require obli" required />
+            </li>
           </ul>
         </section>
       </div>
@@ -85,27 +91,35 @@
           </tr>
           <tr>
             <td>
-              <label for="mapp"> Nom/prénom du maitre d'apprentissage : </label>
+              <label for="mapp" class="require obli">
+                Nom/prénom du maitre d'apprentissage :
+              </label>
               <input type="text" name="" id="mapp" required />
             </td>
-            <td><label for="djury"> Date jury :</label></td>
+            <td><label for="djury" class="obli"> Date jury :</label></td>
             <td><input type="date" id="djury" required /></td>
           </tr>
           <tr>
             <td colspan="3">
-              <label for="refpeda">Nom/prénom du référent pédagogique : </label>
+              <label for="refpeda" class="require obli"
+                >Nom/prénom du référent pédagogique :
+              </label>
               <input type="text" name="" id="refpeda" required />
             </td>
           </tr>
           <tr>
             <td colspan="3">
-              <label for="entre">Entreprise à l'éntranger :</label>
+              <label for="entre" class="require obli"
+                >Entreprise à l'éntranger :</label
+              >
               <input type="text" name="" id="entre" />
             </td>
           </tr>
           <tr>
             <td colspan="3">
-              <label for="tmiss">Titre de la mission : </label>
+              <label for="tmiss" class="require obli"
+                >Titre de la mission :
+              </label>
               <input type="text" name="" id="tmiss" />
             </td>
           </tr>

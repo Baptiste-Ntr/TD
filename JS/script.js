@@ -10,10 +10,11 @@ var test = document.getElementById("test").innerText.length;
 
 function alertpost() {
   for (var i = 0; i < require.length; i++) {
-    if (require[i].innerHTML.length == 0) {
+    if (require[i].value == "") {
+      console.log(require[i].value);
+      require[i].classList.add = "invalid";
       alertsend.innerHTML =
         "<p> Des champs obligatoire ne sont pas remplis </p>";
-      // alertsend.classList.add = "";
       alertcontainer.style.animation = "alertanim 0.3s ease";
       alertcontainer.style.display = "flex";
 
@@ -29,7 +30,7 @@ function alertpost() {
           alertcontainer.style.display = "none";
         }, 280);
       }, 1500);
-    } else if (require[i].innerHTML != 0) {
+    } else if (require[i].value != "") {
       alertcontainer.style.animation = "alertanim 0.3s ease";
       alertcontainer.style.display = "flex";
 

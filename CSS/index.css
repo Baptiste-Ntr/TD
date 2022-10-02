@@ -487,11 +487,12 @@ body .alert-container .alert {
   align-items: center;
   justify-content: center;
   box-shadow: 3px 3px 10px #333;
+  padding: 5px;
 }
 body .alert-container .alert p {
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 

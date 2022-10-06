@@ -8,7 +8,7 @@ function alertpost() {
   for (var i = 0; i < require.length; i++) {
     if (require[i].value == "") {
       console.log(require[i].value);
-      require[i].classList.add = "invalid";
+      require[i].classList.add = "borderinvalid";
       alertsend.innerHTML =
         "<p> Des champs obligatoire ne sont pas remplis </p>";
       alertcontainer.style.animation = "alertanim 0.3s ease";

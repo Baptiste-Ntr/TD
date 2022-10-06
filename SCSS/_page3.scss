@@ -1,5 +1,4 @@
-@import './fonts.scss';
-@import 'anim';
+@import 'var';
 
 .container4 {
     width: 90%;
@@ -127,12 +126,13 @@ footer {
 
         &:nth-child(2):hover {
             background-color: rgb(1, 199, 1);
+            scale: 1.1;
         }
 
         &:first-child:hover {
             background-color: rgb(27, 27, 27);
+            scale: 1.1;
         }
-
     }
 
 }

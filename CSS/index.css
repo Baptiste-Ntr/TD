@@ -84,7 +84,6 @@
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
-  background: #F1FAEE;
   -webkit-animation: slideleft 0.7s 0.3s ease-in-out;
           animation: slideleft 0.7s 0.3s ease-in-out;
 }
@@ -160,6 +159,40 @@ body .obli::after {
   display: inline;
 }
 
+@keyframes slideleft {
+  from {
+    filter: blur(5px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes alertanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes alertanimreverse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes send {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
 .container2 {
   width: 90%;
   height: 300px;
@@ -426,9 +459,11 @@ footer {
 }
 .button input:nth-child(2):hover {
   background-color: rgb(1, 199, 1);
+  scale: 1.1;
 }
 .button input:first-child:hover {
   background-color: rgb(27, 27, 27);
+  scale: 1.1;
 }
 
 @keyframes slideleft {
@@ -496,6 +531,6 @@ body .alert-container .alert p {
   font-weight: bold;
 }
 
-.invalid {
-  border: 1px red solid;
+.borderinvalid {
+  border: 1px red solid !important;
 }/*# sourceMappingURL=index.css.map */
